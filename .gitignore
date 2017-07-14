@@ -1,0 +1,12 @@
+blob-store
+compile-cache
+dev
+storage
+.apm
+.node-gyp
+
+github.cson
+init.coffee
+keymap.cson
+packages/
+snippets.cson

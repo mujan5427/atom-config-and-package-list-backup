@@ -1,0 +1,85 @@
+/*
+ * Your Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed and saved.
+ *
+ * Add your own CSS or Less to fully customize Atom.
+ * If you are unfamiliar with Less, you can read more about it here:
+ * http://lesscss.org
+ */
+
+
+/*
+ * Examples
+ * (To see them, uncomment and save)
+ */
+
+// style the background color of the tree view
+.tree-view {
+  // background-color: whitesmoke;
+}
+
+// style the background and foreground colors on the atom-text-editor-element itself
+atom-text-editor {
+  // color: white;
+  // background-color: hsl(180, 24%, 12%);
+}
+
+// To style other content in the text editor's shadow DOM, use the ::shadow expression
+atom-text-editor::shadow .cursor {
+  // border-color: red;
+}
+
+/*
+ * Author      : Justin Ho
+ * Update      : 2016-12-23
+ * Description : The following content is used for Package/Terminal-plus
+ */
+.terminal-plus .xterm {
+  background-color: black;
+  color: #bfbfbf;
+
+  ::selection {
+    background-color: #ff4da6;
+  }
+
+  .terminal-cursor {
+    background-color: white;
+  }
+}
+
+/*
+ * Description : 自定義 TextEditor Comment 的配色
+ *
+ */
+atom-text-editor.editor .syntax--comment,
+atom-text-editor.editor .syntax--punctuation.syntax--comment {
+
+  color: #909090;
+}
+
+// Entity Tag Name 取消下底線
+atom-text-editor.editor .syntax--entity.syntax--tag.syntax--name {
+
+  text-decoration: none;
+}
+
+.tab-bar .tab.active[data-type$="Editor"], .tab-bar .tab.active[data-type="MarkdownPreviewView"],
+.tab-bar .tab.active[data-type$="Editor"] .title, .tab-bar .tab.active[data-type="MarkdownPreviewView"] .title {
+
+  background-color: inherit;
+}
+
+// 取消 Tab 兩邊的 border
+atom-pane.active .tab.active:before {
+
+  opacity: 0;
+}
+
+// 調整 Tab 下底線樣式
+.tab-bar .tab.active[data-type$="Editor"]::after,
+.tab-bar .tab.active[data-type="MarkdownPreviewView"]::after {
+
+  border-bottom: 2px solid #b799ee;
+}

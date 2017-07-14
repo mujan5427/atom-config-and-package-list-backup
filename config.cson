@@ -1,0 +1,64 @@
+"*":
+  "Sublime-Style-Column-Selection": {}
+  aligner:
+    ":-alignment": "left"
+    ":-leftSpace": true
+  "aligner-javascript":
+    ":-alignment": "left"
+    ":-leftSpace": true
+  "atom-beautify":
+    css:
+      beautify_on_save: true
+    general:
+      _analyticsUserId: "191431ce-a36e-4f2b-b347-28909aa029ef"
+    html:
+      beautify_on_save: true
+    js:
+      beautify_on_save: true
+    scss:
+      beautify_on_save: true
+  autosave:
+    enabled: true
+  core:
+    customFileTypes:
+      "source.ini": [
+        ".buckconfig"
+        ".hgrc"
+      ]
+      "source.json": [
+        ".arcconfig"
+        "BUCK.autodeps"
+      ]
+      "source.python": [
+        "BUCK"
+      ]
+    packagesWithKeymapsDisabled: [
+      "status-bar"
+    ]
+    telemetryConsent: "limited"
+  editor:
+    fontSize: 15
+    showInvisibles: true
+    softWrap: true
+  "exception-reporting":
+    userId: "e9c96c6c-3ba3-ad0f-1f99-f1c220afdbcb"
+  "git-diff": {}
+  "markdown-preview":
+    useGitHubStyle: true
+  "markdown-preview-plus":
+    useGitHubStyle: true
+  "status-bar": {}
+  "terminal-plus":
+    ansiColors:
+      normal:
+        white: "#ffffff"
+    core:
+      workingDirectory: "Active File"
+    style: {}
+    toggles:
+      autoClose: true
+      cursorBlink: false
+  "tree-view":
+    alwaysOpenExisting: true
+  welcome:
+    showOnStartup: false
